@@ -1,0 +1,180 @@
+@import "https://fonts.googleapis.com/css?family=Laila";
+header {
+    width: 100%;
+}
+.container-header{
+    background: black;
+    box-shadow: 3px 0 7px rgba(0,0,0,.3);
+    padding: 0;
+}
+
+.logo{display: inline-block;
+padding-left: 10px;}
+.main-menu{
+    list-style: none;
+    margin: 0;
+    padding-right: 10px;
+    float: right;
+}
+.main-menu li {display: inline-block;}
+.main-menu a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    line-height: 100px;
+    padding-left: 20px;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-family: 'Laila', serif;
+    color: #ffffff;
+    transition:.3s linear;
+}
+.main-menu a:hover {
+    text-decoration: none;
+    color: #0bebf4;}
+@media (max-width: 660px) {
+    .main-menu {
+        float: none;
+        padding-top: 20px;
+    }
+    .container-header {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .main-menu a {padding: 0 10px;}
+}
+@media (max-width: 600px) {
+    .main-menu li {display: block;}
+}
+
+/* video-part*/
+.video-part{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.video-part h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    font-family: 'Laila', serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    z-index: 1;
+    opacity: 0.8%;
+}
+.video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+   }
+
+
+
+
+
+.wrapper{
+    width: 100%;
+}/*
+.img-banner{
+    display: none;
+}*/
+.img-info{
+    width: 100%;
+}
+.img-info h2{
+ padding: 30px 30px 20px;
+    font-family: 'Laila', serif;
+    font-size: 50px;
+    color: #111111;
+    line-height: 44px;
+}
+.img-info p{
+    padding: 0px 30px 20px;
+    font-family: 'Laila', serif;
+    font-size: 16px;
+    color: #111111;
+    line-height: 24px;
+}
+.img-me{
+    width: 100%;
+}
+@media only screeen and ( min-width: 768px) {
+        .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .img-info h2 {
+        padding: 20px 0px 0px;
+    }
+
+    .img-info p {
+        padding: 20px 0px 0px;
+    }
+
+    .img-me {
+        padding-top: 30px;
+    }
+}
+
+
+
+
+
+
+/*flex-box about me*//*
+.second-part{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 200px;
+margin: 50px;
+}
+.photo-radius{
+    border-radius: 50%;
+}
+.photo{
+    margin: 30px;
+    padding: 0;
+    width: 30%;
+    height: auto;
+
+}
+.about-me {
+width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
