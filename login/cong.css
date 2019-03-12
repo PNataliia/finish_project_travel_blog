@@ -1,0 +1,23 @@
+body{
+    background: url("http://www.asrinbeachotel.org/wp-content/uploads/2016/09/beautiful-beach-maldives-1.jpg");
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Laila', serif;
+    margin-left: 30px;
+}
+.cong{
+    background: rgba(44,62,80,0.7);
+    padding: 40px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 240px;
+}
+h2{
+    color: white;
+    margin-top: 50px;
+    margin-left: 10px;
+}
