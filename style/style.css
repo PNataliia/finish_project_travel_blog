@@ -142,7 +142,7 @@ h2:hover{
     text-align: justify;
     width: 280px;
     margin: 20px;}
-img{
+.img-travel{
         width: 280px;
         height: auto;
     border-radius: 10px;
@@ -171,7 +171,7 @@ img{
     text-align: justify;
     width: 280px;
     margin: 20px;}
-img{
+.img-food{
     width: 280px;
     height: auto;
     border-radius: 10px;
