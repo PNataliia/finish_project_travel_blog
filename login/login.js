@@ -42,7 +42,7 @@ $( document ).ready(function() {
         myUser.userS = "Poremchuk";
         myUser.userE = "natalja.bukavyn@gmail.com";
         myUser.password = "16051991";
-    $("#submit-login").on("click", function () {
+    $("#submit-login").click(function (){
         let user = JSON.stringify(myUser);
         localStorage.setItem("user", user);
         let userN = $("#login-username").val();
@@ -50,6 +50,7 @@ $( document ).ready(function() {
         if (userN === myUser.userN && password === myUser.password) {
             window.location.replace("adminPanel.html");
         }
+    })
     });
     /*
     $("#submit-register").on("click", function () {
@@ -65,4 +66,4 @@ $( document ).ready(function() {
             window.location.replace("adminPanel.html");
         }
     })
-});
+});*/
