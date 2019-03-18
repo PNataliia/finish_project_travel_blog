@@ -33,21 +33,35 @@ function registeractive () {
     logintab.classList.remove("active");
 }
 
-
+/*логінізація*/
 
 
 $( document ).ready(function() {
-    var myUser = {};
-    myUser.name = "";
-    myUser.surname = "";
-    myUser.username = "";
-    myUser.password = "";
+    let myUser={};
+        myUser.userN = "Nataliia";
+        myUser.userS = "Poremchuk";
+        myUser.userE = "natalja.bukavyn@gmail.com";
+        myUser.password = "16051991";
     $("#submit-login").on("click", function () {
         let user = JSON.stringify(myUser);
         localStorage.setItem("user", user);
         let userN = $("#login-username").val();
-        let pasw = $("#login-password").val();
-        if (userN === myUser.username && pasw === myUser.password) {
+        let password = $("#login-password").val();
+        if (userN === myUser.userN && password === myUser.password) {
+            window.location.replace("adminPanel.html");
+        }
+    });
+    /*
+    $("#submit-register").on("click", function () {
+        let user = JSON.stringify(myUser);
+        localStorage.setItem("user", user);
+        let userN = $("#register-fname").val();
+        let userS = $("#register-lname").val();
+        let userE = $("#register-email").val();
+        let password = $("#register-password").val();
+        let passwordConf = $("#register-cnfmpassword").val();
+        if (userN === myUser.userN && password === myUser.password &&
+            userS === myUser.userS && userE === myUser.userE &&) {
             window.location.replace("adminPanel.html");
         }
     })
