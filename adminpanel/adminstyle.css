@@ -1,0 +1,56 @@
+@import "https://fonts.googleapis.com/css?family=Laila";
+
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(bgAdminPanel.jpg);
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Laila', serif;
+}
+.container-adminPanel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.navbar-left {
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.nav-link {
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Laila', serif;
+    color: #ffffff;
+}
+.nav-link:hover {
+    color: #0bebf4;}
+.logo-adminPanel{display: block;
+    margin-left: 10px;
+    padding-top: 5px;
+    height: 70px;
+    width: auto;
+}
+.title-adminPanel{
+    width: 100%;
+    height: 50px;
+    background: black;
+    text-align: center;
+}
+.title-admin{
+    color: white;
+
+}
+
+
