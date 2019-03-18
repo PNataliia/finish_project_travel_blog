@@ -33,16 +33,26 @@
         <div class="title-adminPanel">
             <h1 class="title-admin">Create your memory</h1>
         </div>
+        <div class="container-memories">
+        <div class="form-group" id="img-url">
 
-    <div class="form-group" id="img-url">
-        <button type="button" class="upload-img" id="upload-img">Upload image</button>
-        <input class="travel-img" id="url-img" placeholder="Image">
-    </div>
-    <div class="form-group" id="travel-story">
-        <input type="text" class="title-story" id="title-story" placeholder="Title Country">
-        <input type="text" class="travel-story" placeholder="describe your trip">
-    </div>
-</div>
+            <button type="button"  id="upload-img" class="btn btn-dark btn-sm">Upload image</button>
+            <div class="input-img">
+                <input class="travel-img" id="url-img" placeholder="Image"></div>
+        </div>
+        <div class="form-group" id="travel-story">
+            <input type="text" class="title-story" id="myTitle-story" placeholder="Title Country">
+            <textarea class="text-story"  rows="5" id="myText-story" placeholder="Describe your trip"></textarea>
+        </div>
+        <div class="form-group" id="date">
+            <label for="dataToday">Enter the date</label>
+         <input type="date" id="dataToday">
+        </div>
+        <div class="form-group" id="buttons-admin">
+            <button type="button" class="btn btn-dark btn-lg">Save story</button>
+            <button type="button" class="btn btn-dark btn-lg">Go to Home Page</button> </div>
+        </div>
+        </div>
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
