@@ -16,10 +16,9 @@ body{
     transition: all 0.3s ease-in;
 }
 #main:hover{
-    box-shadow: 9px 9px 12px 0 rgba(0,0,0,0.50);
+    box-shadow: 9px 9px 12px 0 rgba(0,0,0,0.99);
 }
-#logincontainer,
-#registercontainer{
+#logincontainer{
     padding: 30px;
 }
 .form-control{
@@ -46,10 +45,9 @@ body{
     background: black;
     color: white;
 }
-#login-tab,
-#register-tab{
+#login-tab{
     padding: 15px;
-    width: 50%;
+    width: 100%;
     display: inline-block;
     box-sizing: border-box;
     text-align: center;

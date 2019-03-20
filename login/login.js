@@ -1,4 +1,4 @@
-let logincontainer = document.getElementById("logincontainer");
+/*let logincontainer = document.getElementById("logincontainer");
 let registercontainer = document.getElementById("registercontainer");
 let registertab = document.getElementById("register-tab");
 let logintab = document.getElementById("login-tab");
@@ -18,9 +18,9 @@ registerlink.addEventListener("click",function(){
     registeractive();
 });
 
-/* переключення між реєстрацією і логінізацією*/
+/* переключення між реєстрацією і логінізацією*//*
 function loginactive (){
-   logincontainer.style.display = "block";
+    logincontainer.style.display = "block";
     registercontainer.style.display = "none";
     logintab.classList.add("active");
     registertab.classList.remove("active");
@@ -32,7 +32,7 @@ function registeractive () {
     registertab.classList.add("active");
     logintab.classList.remove("active");
 }
-
+*/
 /*логінізація*/
 
 
@@ -42,13 +42,13 @@ $( document ).ready(function() {
         myUser.userS = "Poremchuk";
         myUser.userE = "natalja.bukavyn@gmail.com";
         myUser.password = "16051991";
-    $("#submit-login").click(function (){
+    $("#submit-login").on("click", function(){
         let user = JSON.stringify(myUser);
         localStorage.setItem("user", user);
-        let userN = $("#login-username").val();
-        let password = $("#login-password").val();
-        if (userN === myUser.userN && password === myUser.password) {
-            window.location.replace("adminPanel.html");
+        let username = $("#login-username").val();
+        let userpassword = $("#login-password").val();
+        if (username === myUser.userN && userpassword === myUser.password) {
+            window.location.replace("../adminpanel/adminPanel.html");
         }
     })
     });

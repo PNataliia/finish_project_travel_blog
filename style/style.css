@@ -131,7 +131,7 @@ h2:hover{
 
 /*Travel-part*/
 
-.travel-section{
+#travel-section{
     padding: 0;
 }
 .wrap-travel{
@@ -142,6 +142,11 @@ h2:hover{
     justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
+}
+#example-story{
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
 }
 .travel-item{
     text-align: justify;
