@@ -18,24 +18,12 @@
     <script src="login/login.js"></script>
     <script src="adminpanel/adminJS.js"></script>
 
-    <!--
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
--->
+
 </head>
 <body>
 <header>
     <nav class="container-header">
         <a href="" class="logo"><img src="img/small.png"></a>
-        <!--<div id="navToggle">
-            <a href="#" class="small-menu">Menu</a>
-        </div>-->
         <ul class="main-menu">
             <li><a href="#">Home</a></li>
             <li><a href="#routes">About me</a></li>
@@ -62,11 +50,9 @@
                 <img class="img-me" src="img/photo1.jpg">
             </div>
             <div class="routes-item-desc">
-                <h3 class="item-titlee">Hi!!! My name is Nataliia!</h3>
-                <p class="text-abiut-me">Ві́день (нім. Wien [ˈviːn], бавар. Wean, лат. Vi
-                    ndobona) — столиця Австрії. Є однією з 9 земель
-                    Австрії, з усіх оточеною територією іншої землі —
-                    Нижньої Австрії.</p>
+                <h2 class="item-title">Hi!!! My name is Nataliia!</h2>
+                <p class="text-about-me">I am not a travelholic, but i like traveling.
+                    Let's explore the world together. Welcome to my blog!</p>
             </div>
         </section>
     </div>
@@ -82,30 +68,7 @@
 <section class="food" id="food-section">
     <h2 class="section-title">National Food Countries</h2>
     <div class="wrap-food">
-        <div class="food-item">
-            <img class="img-food" id="food-img"
-                 src="https://media-cdn.tripadvisor.com/media/photo-s/09/45/2e/76/l-escargot-montorgueil.jpg">
-            <h3 class="item-title" id="myTitle-food">Dishes</h3>
-            <p class="item-desc">Dresden has a long history as the capital and royal residence for the Electors and
-                Kings of Saxony, who for centuries furnished the city with cultural and artistic splendor, and was once
-                by personal union the family seat of Polish monarchs.</p>
-        </div>
-        <section class="food-item">
-            <img class="img-food"
-                 src="https://media-cdn.tripadvisor.com/media/photo-s/09/45/2e/76/l-escargot-montorgueil.jpg">
-            <h3 class="item-title">Dishes</h3>
-            <p class="item-desc">Dresden has a long history as the capital and royal residence for the Electors and
-                Kings of Saxony, who for centuries furnished the city with cultural and artistic splendor, and was once
-                by personal union the family seat of Polish monarchs.</p>
-        </section>
-        <section class="food-item">
-            <img class="img-food"
-                 src="https://media-cdn.tripadvisor.com/media/photo-s/09/45/2e/76/l-escargot-montorgueil.jpg">
-            <h3 class="item-title">Dishes</h3>
-            <p class="item-desc">Dresden has a long history as the capital and royal residence for the Electors and
-                Kings of Saxony, who for centuries furnished the city with cultural and artistic splendor, and was once
-                by personal union the family seat of Polish monarchs.</p>
-        </section>
+        <div id="example-food"></div>
     </div>
 </section>
 <hr>
@@ -128,7 +91,7 @@
         <a href="#"><i class="fab fa-facebook-messenger"></i></a>
     </div>
 </footer>
-
+</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -136,4 +99,5 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-</body>
+
+</html>

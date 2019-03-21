@@ -2,7 +2,7 @@ $(document).ready(function () {
     /*інпут з вибором дат*/
     let dateMemory = document.getElementById('dateToday');
     dateMemory.valueAsDate = new Date();
-/*stories*/
+    /*stories*/
     var allStories = [];
     var numberStory = 0;
 
@@ -13,7 +13,6 @@ $(document).ready(function () {
         story.text = $("#myText-story").val();
         story.date = $("#dateToday").val();
         allStories.push(story);
-
         let storiesArray = JSON.stringify(allStories);
         localStorage.setItem("stories", storiesArray);
         updateItmes();
@@ -23,13 +22,13 @@ $(document).ready(function () {
     var allFoods = [];
     $("#food-btn").on("click", function () {
         let food = {};
-        food.imgSRC = $("#food-img").val();
+        food.imgSRC = $("#img-food").val();
         food.title = $("#myTitle-food").val();
         food.text = $("#myText-story").val();
         food.date = $("#dateToday").val();
-        allStories.push(story);
-        let storiesArray = JSON.stringify(allStories);
-        localStorage.setItem("stories", storiesArray);
+        allFoods.push(food);
+        let foodsArray = JSON.stringify(allFoods);
+        localStorage.setItem("foods", foodsArray);
         updateItmes();
         alert("hbnjgjkljhg");
     });
@@ -44,5 +43,11 @@ $(document).ready(function () {
         for (var i = 0; i < storiesArray.length; i++) {
             containerStory.append("<p>" + storiesArray[i].title + "</p>")
         }
+        containerFoods = $("#container-Food").empty();
+        let foodsArray = JSON.parse(localStorage.getItem("foods"));
+        for (var a = 0; a < foodsArray.length; a++) {
+            containerFoods.append("<p>" + foodsArray[a].title + "</p>")
+        }
     }
+
 });
